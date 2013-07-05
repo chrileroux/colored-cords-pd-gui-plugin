@@ -1,4 +1,4 @@
-# META NAME colored chords
+# META NAME colored cords
 # META DESCRIPTION plugin - colorize msg, signal cords and boxes 
 # META DESCRIPTION a simple and probably not very useful pd-gui-plugin
 # META AUTHOR <chri_le_roux> chri_le_roux@gmx.net
