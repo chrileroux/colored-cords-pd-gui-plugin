@@ -13,6 +13,7 @@ namespace eval ::coloredcords:: {
 set ::coloredcords::config(msg_color) "#3399cc"
 set ::coloredcords::config(msg_color_highlight) "#a7d5ed"
 set ::coloredcords::config(signal_color) "#f65b16"
+set ::coloredcords::config(signal_color_highlight) "#f65b16"
 set ::coloredcords::config(color_mixed_inlet) "green"
 
 proc ::coloredcords::init {} {
@@ -26,7 +27,7 @@ proc ::coloredcords::init {} {
 
 # set the msg color from config file
 proc ::coloredcords::set_msg_colors {} {
-	set ::msg_cord_highlight $::coloredcords::config(msg_color)
+	set ::msg_cord_highlight $::coloredcords::config(msg_color_highlight)
 	set ::msg_cord $::coloredcords::config(msg_color)
 	set ::msg_nlet $::coloredcords::config(msg_color)
 	set ::msg_box_fill $::coloredcords::config(msg_color_highlight)
@@ -34,7 +35,7 @@ proc ::coloredcords::set_msg_colors {} {
 
 # set signal color from config file
 proc ::coloredcords::set_signal_colors {} {
-	set ::signal_cord_highlight $::coloredcords::config(signal_color)
+	set ::signal_cord_highlight $::coloredcords::config(signal_color_highlight)
 	set ::signal_cord $::coloredcords::config(signal_color)
 	set ::signal_nlet $::coloredcords::config(signal_color)
 }
